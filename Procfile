@@ -1,1 +1,1 @@
-web: gunicorn app:whois
+web: gunicorn app:app
