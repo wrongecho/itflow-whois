@@ -1,0 +1,12 @@
+[Unit]
+Description=ITFlow WHOIS Lookup Service
+After=network.target
+
+[Service]
+User=www-data
+WorkingDirectory=/opt/itflow-whois-lookup/
+ExecStart=/opt/itflow-whois-lookup/venv/bin/waitress-serve app:app
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
