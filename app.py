@@ -10,3 +10,7 @@ def lookup(domain):
 	w = whois.whois(domain)
 	
 	return (w)
+
+@app.route("/")
+def index():
+        return "ITFlow WHOIS data lookup service"
