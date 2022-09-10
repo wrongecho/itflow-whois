@@ -13,4 +13,4 @@ def lookup(domain):
 
 @app.route("/")
 def index():
-        return "ITFlow WHOIS data lookup service"
+        return "ITFlow WHOIS data lookup service - itflow.org"
